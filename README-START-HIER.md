@@ -1,21 +1,20 @@
-# VideoDownloader – GitHub Pages Website
+# Muxelio – GitHub Pages Website
 
-## Online stellen
-1. GitHub: neues **öffentliches** Repository `VideoDownloader-Website` erstellen.
-2. Sämtliche Dateien dieses ZIPs (nicht den übergeordneten Ordner) ins Repository-Hauptverzeichnis hochladen.
-3. Unter **Settings → Pages** die Quelle **Deploy from a branch** wählen, Branch `main`, Ordner `/ (root)` auswählen und speichern.
-4. Nach Bereitstellung lautet die Adresse normalerweise `https://DEIN-GITHUB-NAME.github.io/VideoDownloader-Website/`. Die tatsächliche URL wird unter GitHub Pages angezeigt.
-5. **WICHTIG:** Vor öffentlicher Freigabe `imprint.html` und `privacy.html` mit korrekten Angaben vervollständigen. Keine erfundenen Daten verwenden.
-6. Erst nach Lizenz-, Rechts- und Veröffentlichungstest einen echten Downloadlink oder Bezahlbutton hinzufügen.
+## Veröffentlichung unter muxelio.de
 
-## Wichtig für Lemon Squeezy
-Website-Link erst angeben, wenn die Seite tatsächlich öffentlich erreichbar ist. Eine Website allein bedeutet keine Freigabe für das Produkt; der Zahlungsanbieter kann den Store prüfen. Free/Pro sind derzeit ausdrücklich nur als geplante Tarife dargestellt.
+1. Die Dateien dieses ZIPs **direkt ins Hauptverzeichnis** des vorhandenen Repositorys `Rogoeu/VideoDownloader-Website` hochladen (bestehende Dateien bei gleichem Namen ersetzen). **Nicht** einen zusätzlichen Unterordner hochladen.
+2. In **Settings → Pages** muss als Custom domain `muxelio.de` eingetragen sein. Die Datei `CNAME` ist ebenfalls enthalten.
+3. Bei INWX zeigen die vier A-Einträge für die Hauptdomain auf `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` zeigt per CNAME auf `rogoeu.github.io`. **Die fünf Clerk-CNAME-Einträge nicht ändern.**
+4. GitHub Pages stellt HTTPS aus; Zertifikat und DNS-Prüfung können dauern.
+5. **Vor dem öffentlichen Betrieb:** `imprint.html` und `privacy.html` rechtlich vervollständigen. Beide Seiten enthalten ausdrücklich Platzhalter.
+6. Es gibt noch keine echten Download- oder Pro-Kaufbuttons. Stripe/Clerk Production müssen vor Verkäufen getrennt getestet und rechtlich vorbereitet werden.
 
-## Inhalte
-- `index.html`: Landingpage Englisch/Deutsch
-- `style.css`: Responsive Design
-- `site.js`: Sprachwechsel
-- `assets/icon.png`: Produkticon
-- `privacy.html`, `imprint.html`: klar markierte rechtliche Entwürfe
+## Inhalt
+- `index.html`: zweisprachige Landingpage
+- `style.css`: vorhandenes responsives Design
+- `site.js`: Sprachwechsel DE/EN
+- `assets/icon.png`: bestehendes Produktsymbol (vorerst beibehalten)
+- `imprint.html`, `privacy.html`: **rechtliche Entwürfe**, nicht fertig
+- `CNAME`: GitHub-Pages-Domain
 
-Keine Downloads, Lizenzschlüssel oder Zahlungsdaten auf dieser Website integriert.
+Die Website ist nur die Produktvorschau. Sie verbindet noch nicht automatisch Login oder Stripe-Checkout.
